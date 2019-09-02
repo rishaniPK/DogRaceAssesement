@@ -127,7 +127,7 @@ namespace DogRace
             try
             {
                 if (nud_money.Value == 5)
-                   lbl_miniMoney.Text = "Minimum limit : 5$";
+                   lbl_miniMoney.Text = "Minimum limit : 1$";
                 //callling the methode
                 FillArrays();
                 //button Race is disable

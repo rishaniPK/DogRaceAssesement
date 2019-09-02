@@ -34,7 +34,6 @@
             this.pb_dog3 = new System.Windows.Forms.PictureBox();
             this.pb_dog4 = new System.Windows.Forms.PictureBox();
             this.gbBettingDetails = new System.Windows.Forms.GroupBox();
-            this.lbl_miniMoney = new System.Windows.Forms.Label();
             this.btn_startRace = new System.Windows.Forms.Button();
             this.nud_NoOfDog = new System.Windows.Forms.NumericUpDown();
             this.lbl_betOnDog = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.rb_person3 = new System.Windows.Forms.RadioButton();
             this.rb_person1 = new System.Windows.Forms.RadioButton();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.lbl_miniMoney = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PbRace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_dog2)).BeginInit();
@@ -132,16 +132,6 @@
             this.gbBettingDetails.TabStop = false;
             this.gbBettingDetails.Text = "Betting Details";
             this.gbBettingDetails.Enter += new System.EventHandler(this.GbBettingDetails_Enter);
-            // 
-            // lbl_miniMoney
-            // 
-            this.lbl_miniMoney.AutoSize = true;
-            this.lbl_miniMoney.Location = new System.Drawing.Point(16, 21);
-            this.lbl_miniMoney.Name = "lbl_miniMoney";
-            this.lbl_miniMoney.Size = new System.Drawing.Size(160, 17);
-            this.lbl_miniMoney.TabIndex = 13;
-            this.lbl_miniMoney.Text = "the minim amout to bet";
-            this.lbl_miniMoney.Click += new System.EventHandler(this.Label2_Click);
             // 
             // btn_startRace
             // 
@@ -306,6 +296,16 @@
             this.rb_person1.UseVisualStyleBackColor = true;
             this.rb_person1.CheckedChanged += new System.EventHandler(this.Rb_person1_CheckedChanged);
             // 
+            // lbl_miniMoney
+            // 
+            this.lbl_miniMoney.AutoSize = true;
+            this.lbl_miniMoney.Location = new System.Drawing.Point(16, 21);
+            this.lbl_miniMoney.Name = "lbl_miniMoney";
+            this.lbl_miniMoney.Size = new System.Drawing.Size(160, 17);
+            this.lbl_miniMoney.TabIndex = 13;
+            this.lbl_miniMoney.Text = "the minim amout to bet";
+            this.lbl_miniMoney.Click += new System.EventHandler(this.Label2_Click);
+            // 
             // RaceBet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,8 +355,8 @@
         private System.Windows.Forms.RadioButton rb_person1;
         private System.Windows.Forms.Button btn_startRace;
         private System.Windows.Forms.NumericUpDown nud_NoOfDog;
-        private System.Windows.Forms.Label lbl_miniMoney;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Label lbl_miniMoney;
     }
 }
 
