@@ -184,8 +184,13 @@
             // nud_money
             // 
             this.nud_money.Location = new System.Drawing.Point(222, 152);
+            this.nud_money.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.nud_money.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
@@ -197,6 +202,7 @@
             0,
             0,
             0});
+            this.nud_money.ValueChanged += new System.EventHandler(this.Nud_money_ValueChanged);
             // 
             // btn_bet
             // 

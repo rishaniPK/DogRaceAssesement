@@ -232,7 +232,7 @@ namespace DogRace
         {
             // if the varable amount is less than 15 and greather than 5 
             // the statment is ture else its false
-            if (amount > 15 && amount > 5)
+            if (amount > 1000 && amount > 1)
                 return true;
 
             return false;
@@ -301,6 +301,11 @@ namespace DogRace
         }
         private void GbBettingDetails_Enter(object sender, EventArgs e)
         {
+        }
+
+        private void Nud_money_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
