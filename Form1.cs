@@ -123,12 +123,12 @@ namespace DogRace
         //fucntion when the form load
         private void RaceBet_Load(object sender, EventArgs e)
         {
-            // The minimun value of numbericupdown is 5
+            // The minimun value of numbericupdown is 1
             try
             {
-                if (nud_money.Value == 5)
+                if (nud_money.Value == 1)
                    lbl_miniMoney.Text = "Minimum limit : 1$";
-                //callling the methode
+                //calling the methode
                 FillArrays();
                 //button Race is disable
                 if (!this.enableRaceBtn)
@@ -182,13 +182,6 @@ namespace DogRace
             //value of money and selecting the number at the dog to bet
             money = Convert.ToInt32(nud_money.Value);
             dogNumber = Convert.ToInt32(nud_NoOfDog.Value);
-
-            //calling the methode as not to bet more than 15 dollar in one dog
-            if (IsExceedBetLimit(money))
-            {
-                MessageBox.Show("You can't put money greater than 15 on dog.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
             enableRaceBtn = true; // if at least one bet is placed enable race button 
 
             // if the radio button One is checked you need to select the amount to bet and
@@ -230,9 +223,9 @@ namespace DogRace
         // methode to find the maximum limit to bet on a dog
         public bool IsExceedBetLimit(int amount)
         {
-            // if the varable amount is less than 15 and greather than 5 
+            // if the variable amount is less than 10000 and greather than 1
             // the statment is ture else its false
-            if (amount > 1000 && amount > 1)
+            if (amount > 10000 && amount > 1)
                 return true;
 
             return false;
